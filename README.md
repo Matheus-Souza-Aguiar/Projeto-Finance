@@ -1,6 +1,6 @@
-Painel Financeiro Pessoal
+Finance
 
-O Painel Financeiro Pessoal é um sistema web desenvolvido para auxiliar no gerenciamento das finanças pessoais, permitindo o controle de receitas, despesas e do fluxo financeiro mensal de forma simples, organizada e intuitiva.
+O Finance é um sistema web desenvolvido para auxiliar no gerenciamento das finanças pessoais, permitindo o controle de receitas, despesas e do fluxo financeiro mensal de forma simples, organizada e intuitiva.
 
 O projeto tem como objetivo central fornecer uma visão clara da situação financeira por meio do registro de movimentações, acompanhamento do saldo do mês e geração de indicadores que auxiliem na tomada de decisões financeiras.
 
