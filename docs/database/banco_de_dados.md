@@ -1,77 +1,26 @@
 # Banco de Dados
 
-## Objetivo
+Esta pasta reúne a documentação relacionada à modelagem e à implementação
+do banco de dados do Projeto Finance.
 
-O banco de dados do Projeto Finance será responsável por armazenar as informações dos usuários, receitas, despesas, categorias e movimentações financeiras mensais.
+## Tecnologia
 
-## Entidades iniciais
+- PostgreSQL
 
-### Usuário
-Representa a pessoa que utiliza o sistema.
+## Documentos
 
-Campos iniciais:
-- id
-- nome
-- email
-- senha_hash
-- data_criacao
-- ativo
+- [Modelo conceitual](modelo_conceitual.md)
+- DER — em desenvolvimento
+- Modelo lógico — pendente
+- Dicionário de dados — pendente
+- Estrutura física do banco — pendente
 
----
+## Etapas
 
-### Categoria
-Representa os tipos de receitas e despesas.
-
-Exemplos:
-- Salário
-- Freelance
-- Alimentação
-- Transporte
-- Moradia
-- Lazer
-- Dívidas
-- Investimentos
-
-Campos iniciais:
-- id
-- usuario_id
-- nome
-- tipo
-- data_criacao
-
----
-
-### Transação
-Representa uma entrada ou saída financeira.
-
-Campos iniciais:
-- id
-- usuario_id
-- categoria_id
-- tipo
-- descricao
-- valor
-- data_transacao
-- data_criacao
-
-Tipos:
-- receita
-- despesa
-
----
-
-## Relacionamentos
-
-Um usuário pode ter várias categorias.
-
-Um usuário pode ter várias transações.
-
-Uma categoria pode estar vinculada a várias transações.
-
-## Regras iniciais do banco de dados
-
-- Cada usuário visualiza apenas seus próprios dados.
-- Toda transação deve ser receita ou despesa.
-- Toda transação deve ter valor maior que zero.
-- Uma transação pode ou não ter categoria.
-- O saldo mensal será calculado com base nas receitas menos despesas.
+- [x] Levantamento das entidades
+- [x] Definição dos relacionamentos
+- [x] Definição das cardinalidades
+- [ ] Desenvolvimento do DER
+- [ ] Desenvolvimento do modelo lógico
+- [ ] Desenvolvimento do dicionário de dados
+- [ ] Criação das migrations
