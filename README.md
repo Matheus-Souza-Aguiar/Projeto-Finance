@@ -2,6 +2,8 @@
 
 Descrição do projeto...
 
+O **Finance** é um sistema de gerenciamento financeiro pessoal desenvolvido com foco em organização, controle e escalabilidade. O projeto tem como objetivo centralizar o gerenciamento de receitas, despesas, contas, cartões de crédito e indicadores financeiros, seguindo boas práticas de arquitetura, documentação e desenvolvimento de software.
+
 ## Status do Projeto
 
 🚧 Em desenvolvimento — fase de modelagem do banco de dados.
