@@ -1,226 +1,288 @@
-Regras de Negócio — Projeto Finance (Versão 1.0)
-1. Usuários
-RN001 — Cadastro de Usuário
+# Regras de Negócio — Projeto Finance (Versão 1.0)
+
+## Usuários
+
+### RN001 — Cadastro de Usuário
+
 O sistema deve permitir o cadastro de usuários.
-Cada usuário possui uma conta individual.
-Cada usuário visualiza apenas seus próprios dados.
-RN002 — Autenticação
-O acesso ao sistema deve exigir autenticação.
-O usuário deve permanecer autenticado durante sua sessão.
-2. Contas e Carteiras
-RN003 — Cadastro de Contas
+
+Cada usuário deve possuir uma conta individual e poderá visualizar apenas os seus próprios dados.
+
+### RN002 — Autenticação
+
+O acesso ao sistema deverá exigir autenticação.
+
+O usuário permanecerá autenticado durante sua sessão, conforme as regras de segurança definidas pela aplicação.
+
+---
+
+## Contas e Carteiras
+
+### RN003 — Cadastro de Contas
 
 O usuário poderá cadastrar contas ou carteiras financeiras.
 
-Exemplos:
+**Exemplos:**
 
-Banco Inter
-Nubank
-Caixa
-Dinheiro
-Carteira Física
+* Banco Inter
+* Nubank
+* Caixa Econômica
+* Dinheiro em espécie
+* Carteira física
 
-Cada conta deve possuir:
+Cada conta deverá possuir:
 
-Nome
-Tipo
-Saldo atual
-Status (Ativa/Inativa)
-3. Receitas
-RN004 — Cadastro de Receitas
+* Nome
+* Tipo
+* Saldo atual
+* Status (Ativa ou Inativa)
+
+---
+
+## Receitas
+
+### RN004 — Cadastro de Receitas
 
 O usuário poderá:
 
-cadastrar
-editar
-excluir receitas.
+* Cadastrar receitas;
+* Editar receitas;
+* Excluir receitas.
 
-Cada receita deve possuir:
+Cada receita deverá possuir:
 
-descrição
-valor
-data
-conta de destino
+* Descrição;
+* Valor;
+* Data;
+* Conta de destino.
 
-Status:
+**Status possíveis:**
 
-Recebida
-Pendente
-4. Categorias
-RN005 — Categorias
+* Recebida
+* Pendente
 
-Cada despesa deve obrigatoriamente possuir uma categoria.
+---
+
+## Categorias
+
+### RN005 — Categorias
+
+Toda despesa deverá obrigatoriamente possuir uma categoria.
 
 O usuário poderá criar categorias personalizadas.
 
-Categorias padrão:
+**Categorias padrão:**
 
-Alimentação
-Moradia
-Transporte
-Saúde
-Educação
-Lazer
-Contas Fixas
-Outros
-5. Despesas
-RN006 — Cadastro de Despesas
+* Alimentação
+* Moradia
+* Transporte
+* Saúde
+* Educação
+* Lazer
+* Contas Fixas
+* Outros
+
+---
+
+## Despesas
+
+### RN006 — Cadastro de Despesas
 
 O usuário poderá:
 
-cadastrar
-editar
-excluir despesas.
+* Cadastrar despesas;
+* Editar despesas;
+* Excluir despesas.
 
-Cada despesa deve conter:
+Cada despesa deverá possuir:
 
-descrição
-valor
-data
-categoria
-conta utilizada
+* Descrição;
+* Valor;
+* Data;
+* Categoria;
+* Conta utilizada.
 
-Status:
+**Status possíveis:**
 
-Paga
-Pendente
-6. Despesas Recorrentes
-RN007 — Cadastro de Recorrências
+* Paga
+* Pendente
+
+---
+
+## Despesas Recorrentes
+
+### RN007 — Cadastro de Recorrências
 
 O usuário poderá cadastrar despesas recorrentes.
 
-Exemplos:
+**Exemplos:**
 
-Internet
-Aluguel
-Academia
-Condomínio
+* Internet
+* Aluguel
+* Academia
+* Condomínio
 
-A recorrência deve possuir:
+Cada recorrência deverá possuir:
 
-descrição
-valor
-categoria
-conta
-frequência
-data início
-data fim (opcional)
+* Descrição;
+* Valor;
+* Categoria;
+* Conta;
+* Frequência;
+* Data de início;
+* Data de término (opcional).
 
-O sistema deverá gerar automaticamente as despesas correspondentes.
+O sistema deverá gerar automaticamente as despesas correspondentes conforme a frequência definida.
 
-7. Despesas Pendentes
-RN008 — Pendências
+---
 
-O sistema deverá identificar despesas não pagas.
+## Despesas Pendentes
+
+### RN008 — Controle de Pendências
+
+O sistema deverá identificar automaticamente despesas não pagas.
 
 O usuário poderá:
 
-quitar a despesa;
-realocar para o mês seguinte.
+* Quitar a despesa;
+* Realocar a despesa para o mês seguinte.
 
-O histórico deve permanecer preservado.
+O histórico das movimentações deverá permanecer preservado.
 
-8. Cartões de Crédito
-RN009 — Cadastro de Cartões
+---
 
-O usuário poderá cadastrar cartões.
+## Cartões de Crédito
 
-Cada cartão deve possuir:
+### RN009 — Cadastro de Cartões
 
-nome
-limite total
-limite disponível
-dia do fechamento
-dia do vencimento
+O usuário poderá cadastrar cartões de crédito.
 
-O limite do cartão não representa receita.
+Cada cartão deverá possuir:
 
-9. Faturas
-RN010 — Controle de Faturas
+* Nome;
+* Limite total;
+* Limite disponível;
+* Dia de fechamento;
+* Dia de vencimento.
 
-Toda compra realizada no cartão deverá compor uma fatura.
+O limite do cartão **não deverá ser considerado como receita**.
 
-Uma fatura deve possuir:
+---
 
-cartão
-competência
-vencimento
-valor total
-status
+## Faturas
 
-Status:
+### RN010 — Controle de Faturas
 
-Aberta
-Fechada
-Paga
+Toda compra realizada utilizando cartão de crédito deverá compor uma fatura.
 
-O pagamento da fatura gera uma despesa na conta escolhida pelo usuário.
+Cada fatura deverá possuir:
 
-10. Anexos
-RN011 — Comprovantes
+* Cartão;
+* Competência;
+* Data de vencimento;
+* Valor total;
+* Status.
 
-O usuário poderá anexar comprovantes em despesas pagas.
+**Status possíveis:**
 
-Formatos permitidos:
+* Aberta
+* Fechada
+* Paga
 
-PDF
-JPG
-PNG
+O pagamento da fatura deverá gerar uma despesa vinculada à conta escolhida pelo usuário.
 
-O sistema permitirá:
+---
 
-visualizar
-baixar
+## Anexos
 
-Cada comprovante pertence a uma despesa.
+### RN011 — Comprovantes
 
-11. Consultas
-RN012 — Filtros
+O usuário poderá anexar comprovantes às despesas pagas.
 
-O usuário poderá consultar informações por:
+**Formatos permitidos:**
 
-período
-categoria
-conta
-cartão
-status
-tipo de movimentação
-12. Indicadores
-RN013 — Dashboard
+* PDF
+* JPG
+* PNG
+
+O sistema deverá permitir:
+
+* Visualização;
+* Download.
+
+Cada comprovante deverá estar vinculado a uma única despesa.
+
+---
+
+## Consultas
+
+### RN012 — Filtros
+
+O sistema deverá permitir consultas utilizando filtros como:
+
+* Período;
+* Categoria;
+* Conta;
+* Cartão;
+* Status;
+* Tipo de movimentação.
+
+---
+
+## Dashboard
+
+### RN013 — Indicadores Financeiros
 
 O sistema deverá apresentar automaticamente:
 
-receitas do mês
-despesas do mês
-saldo do mês
-maiores categorias
-percentual por categoria
-evolução mensal
-13. Auditoria
-RN014 — Histórico
+* Receitas do mês;
+* Despesas do mês;
+* Saldo mensal;
+* Maiores categorias de gasto;
+* Percentual de gastos por categoria;
+* Evolução financeira mensal.
 
-Todos os registros deverão possuir:
+---
 
-data de criação
-data da última atualização
-14. Segurança
-RN015 — Isolamento dos Dados
+## Auditoria
 
-Um usuário nunca poderá visualizar informações pertencentes a outro usuário.
+### RN014 — Histórico de Registros
 
-15. Regras Gerais
-RN016
+Todos os registros deverão armazenar:
 
-Valores financeiros não podem ser negativos.
+* Data de criação;
+* Data da última atualização.
 
-RN017
+---
 
-Toda movimentação financeira deve possuir um usuário responsável.
+## Segurança
 
-RN018
+### RN015 — Isolamento dos Dados
 
-Toda despesa deve possuir categoria.
+Um usuário nunca poderá visualizar, editar ou excluir informações pertencentes a outro usuário.
 
-RN019
+---
 
-Toda receita e despesa deve estar vinculada a uma conta.
+# Regras Gerais
+
+### RN016 — Valores Financeiros
+
+Valores financeiros deverão ser obrigatoriamente maiores que zero.
+
+---
+
+### RN017 — Responsabilidade das Movimentações
+
+Toda movimentação financeira deverá estar vinculada a um usuário responsável.
+
+---
+
+### RN018 — Categoria Obrigatória
+
+Toda despesa deverá possuir obrigatoriamente uma categoria.
+
+---
+
+### RN019 — Vinculação de Contas
+
+Toda receita e toda despesa deverão estar vinculadas a uma conta ou carteira financeira.
