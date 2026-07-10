@@ -1,13 +1,37 @@
-Finance
+# Finance
 
-O Finance é um sistema web desenvolvido para auxiliar no gerenciamento das finanças pessoais, permitindo o controle de receitas, despesas e do fluxo financeiro mensal de forma simples, organizada e intuitiva.
+Descrição do projeto...
 
-O projeto tem como objetivo central fornecer uma visão clara da situação financeira por meio do registro de movimentações, acompanhamento do saldo do mês e geração de indicadores que auxiliem na tomada de decisões financeiras.
+## Status do Projeto
 
-Inicialmente, o sistema contará com autenticação de usuários, permitindo que cada pessoa tenha acesso apenas aos seus próprios dados financeiros. As funcionalidades da primeira versão serão voltadas para o cadastro e gerenciamento de receitas, despesas e categorias, além da apresentação de um painel com informações consolidadas do período.
+🚧 Em desenvolvimento — fase de modelagem do banco de dados.
 
-Embora seja um projeto de uso pessoal, seu desenvolvimento seguirá princípios de arquitetura de software, organização de código, documentação e versionamento com Git, buscando simular um ambiente de desenvolvimento profissional.
+## Tecnologias Planejadas
 
-A arquitetura será planejada desde o início visando escalabilidade e facilidade de manutenção, permitindo que novas funcionalidades sejam adicionadas futuramente, como metas financeiras, orçamento mensal, recorrências, cartões de crédito, investimentos, relatórios avançados e integração com outras tecnologias.
+- Python
+- FastAPI
+- PostgreSQL
+- HTML
+- CSS
+- JavaScript
 
-O projeto utilizará Python com FastAPI no back-end, PostgreSQL como banco de dados e HTML, CSS e JavaScript no front-end, priorizando uma base sólida que possibilite futuras migrações para frameworks mais modernos ou a evolução da interface sem a necessidade de reestruturar toda a aplicação.
+## Documentação
+
+- [Planejamento geral](docs/geral/planejamento.md)
+- [Regras de negócio](docs/analise/regras_negocio.md)
+- [Documentação do banco de dados](docs/database/banco_de_dados.md)
+- [Modelo conceitual](docs/database/modelo_conceitual.md)
+
+## Etapas do Projeto
+
+- [x] Estrutura inicial do repositório
+- [x] Regras de negócio
+- [x] Modelo conceitual
+- [ ] DER
+- [ ] Modelo lógico
+- [ ] Dicionário de dados
+- [ ] Implementação do PostgreSQL
+- [ ] Backend com FastAPI
+- [ ] Front-end
+- [ ] Testes
+- [ ] Deploy
