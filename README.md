@@ -10,12 +10,29 @@ O **Finance** é um sistema de gerenciamento financeiro pessoal desenvolvido com
 
 ## Tecnologias Planejadas
 
-- Python
-- FastAPI
+Back-end
+- Java 21
+- Spring Boot
+- Spring Security
+- Spring Data JPA
+- Hibernate
+
+Banco de Dados
 - PostgreSQL
+
+Front-end
 - HTML
 - CSS
 - JavaScript
+
+Ferramentas
+- Maven
+- Docker
+- Swagger/OpenAPI
+- Git
+- GitHub
+- Postman
+
 
 ## Documentação
 
@@ -26,14 +43,30 @@ O **Finance** é um sistema de gerenciamento financeiro pessoal desenvolvido com
 
 ## Etapas do Projeto
 
-- [x] Estrutura inicial do repositório
-- [x] Regras de negócio
-- [x] Modelo conceitual
-- [ ] DER
-- [ ] Modelo lógico
-- [ ] Dicionário de dados
-- [ ] Implementação do PostgreSQL
-- [ ] Backend com FastAPI
-- [ ] Front-end
-- [ ] Testes
-- [ ] Deploy
+✔ Planejamento
+
+✔ Regras de Negócio
+
+✔ Modelo Conceitual
+
+⬜ DER
+
+⬜ Modelo Lógico
+
+⬜ Dicionário de Dados
+
+⬜ Estrutura Física do Banco
+
+⬜ Configuração do Spring Boot
+
+⬜ Desenvolvimento da API
+
+⬜ Autenticação JWT
+
+⬜ Front-end
+
+⬜ Testes
+
+⬜ Docker
+
+⬜ Deploy
