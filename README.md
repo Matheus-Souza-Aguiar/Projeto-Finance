@@ -17,7 +17,7 @@ O **Finance** é um sistema de gerenciamento financeiro pessoal...
 - Spring Data JPA
 - Hibernate
 
-#### Banco de Dados
+### Banco de Dados
 - PostgreSQL
 
 ### Front-end
