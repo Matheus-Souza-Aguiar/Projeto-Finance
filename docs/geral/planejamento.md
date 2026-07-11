@@ -1,6 +1,6 @@
 # 📌 Progresso do Projeto Finance
 
-Última atualização: 09/07/2026
+Última atualização: 11/07/2026
 
 ---
 
@@ -79,8 +79,6 @@
 
 
 # Status Geral
-
-🟩 Concluído: 8%
 
 🟨 Em andamento: Banco de dados - DER
 

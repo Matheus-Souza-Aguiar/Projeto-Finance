@@ -1,4 +1,6 @@
-Tecnologia
+# Documentação da API
+
+## Tecnologias planejadas
 
 - Java 21
 - Spring Boot
@@ -8,6 +10,8 @@ Tecnologia
 - PostgreSQL
 - Swagger/OpenAPI
 
-Status
+## Status
 
 Em planejamento.
+
+A definição dos endpoints será iniciada após a conclusão da modelagem do banco de dados.
